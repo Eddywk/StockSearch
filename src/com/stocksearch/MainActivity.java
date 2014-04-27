@@ -1,4 +1,7 @@
 package com.stocksearch;
+/**
+* @author Kang Wang
+*/
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,6 +21,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -285,8 +289,10 @@ public class MainActivity extends ActionBarActivity {
 		feedlink = quote.chart;
 		lastprice.setText(quote.lastprice);
 		if(quote.changetype.equals("+")){
+			qoute_change.setTextColor(Color.GREEN);
 			updown.setImageResource(R.drawable.green_up_arrow);
 		}else if(quote.changetype.equals("-")){
+			qoute_change.setTextColor(Color.RED);
 			updown.setImageResource(R.drawable.red_down_arrow);
 		}
 		qoute_change.setText(quote.change+quote.percent);

@@ -28,6 +28,7 @@ public class NewsActivity extends Activity{
 	static TextView errorinfo;
 	final static String[] choices= new String[] { "View", "Cancel"};
 	static int pos;
+	@SuppressWarnings("unchecked")
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.news_layout);

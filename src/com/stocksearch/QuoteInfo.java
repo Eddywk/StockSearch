@@ -1,7 +1,5 @@
 package com.stocksearch;
 
-import java.net.URL;
-
 public class QuoteInfo {
 	String lastprice="";
 	String change=null;
